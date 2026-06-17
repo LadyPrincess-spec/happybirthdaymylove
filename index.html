@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Lord Gentle</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Georgia, serif;
+}
+
+body{
+background:#071426;
+color:white;
+overflow:hidden;
+}
+
+.page{
+height:100vh;
+width:100%;
+display:none;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:40px;
+text-align:center;
+position:relative;
+}
+
+.page.active{
+display:flex;
+}
+
+h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+h2{
+margin-bottom:20px;
+font-size:2rem;
+}
+
+p{
+max-width:800px;
+line-height:1.9;
+font-size:1.1rem;
+}
+
+button{
+margin-top:30px;
+padding:15px 35px;
+border:none;
+border-radius:30px;
+background:#7cc7ff;
+color:#071426;
+font-weight:bold;
+cursor:pointer;
+font-size:1rem;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.star{
+position:absolute;
+background:white;
+border-radius:50%;
+opacity:.7;
+animation:twinkle 4s infinite;
+}
+
+@keyframes twinkle{
+0%,100%{opacity:.2}
+50%{opacity:1}
+}
+
+.card{
+background:rgba(255,255,255,0.08);
+padding:25px;
+border-radius:20px;
+margin:10px;
+max-width:600px;
+backdrop-filter:blur(10px);
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+.small{
+font-size:1rem;
+}
+
+.final{
+font-size:2rem;
+line-height:2;
+}
+</style>
+
+</head>
+<body>
+
+<div id="stars"></div>
+
+<!-- PAGE 1 -->
+<section class="page active">
+<h1>Reserved For Lord Gentle 🌙</h1>
+
+<p>
+A birthday letter prepared by someone who loves you very much.
+</p>
+
+<button onclick="nextPage()">Open</button>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+<h2>Happy 22nd Birthday, Lord Gentle 💙</h2>
+
+<p>
+I hope this year is kinder to you.<br><br>
+
+I hope your hard work gets noticed.<br><br>
+
+I hope opportunities find you.<br><br>
+
+I hope happiness finds a permanent place in your heart.
+</p>
+
+<button onclick="nextPage()">Continue</button>
+</section>
+
+<!-- PAGE 3 -->
+<section class="page">
+<h2>Things I Love About You ✨</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Funny</h3>
+<p class="small">
+Thank you for making ordinary days feel lighter.
+</p>
+</div>
+
+<div class="card">
+<h3>Patient</h3>
+<p class="small">
+You handle me with patience even when I am difficult.
+</p>
+</div>
+
+<div class="card">
+<h3>Gentle</h3>
+<p class="small">
+The nickname Lord Gentle suits you perfectly.
+</p>
+</div>
+
+<div class="card">
+<h3>Caring</h3>
+<p class="small">
+You notice the little things most people miss.
+</p>
+</div>
+
+<div class="card">
+<h3>Great Papa</h3>
+<p class="small">
+You make people feel safe, loved, and understood.
+</p>
+</div>
+
+</div>
+
+<button onclick="nextPage()">Read My Letter</button>
+</section>
+
+<!-- PAGE 4 -->
+<section class="page">
+<h2>Dear Lord Gentle,</h2>
+
+<p>
+
+Today, you turn twenty-two.
+
+<br><br>
+
+And while birthdays are supposed to be about getting older, I think today is really about celebrating the fact that you exist.
+
+<br><br>
+
+Twenty-two years ago, the world received someone kind, patient, gentle, caring, and full of love.
+
+<br><br>
+
+Maybe nobody knew it then.
+
+But I know it now.
+
+Because I have been lucky enough to know you.
+
+<br><br>
+
+Thank you for being patient with me.
+
+Thank you for understanding me.
+
+Thank you for handling me gently.
+
+Thank you for being my safe place.
+
+<br><br>
+
+One of my favorite things about you is how naturally caring you are.
+
+You make people feel comfortable.
+
+You make people feel seen.
+
+You make people feel safe.
+
+And I think that is one of the rarest gifts a person can have.
+
+<br><br>
+
+I know there are things you're still working toward.
+
+The position you hope to achieve.
+
+The future you're building.
+
+The business dream you keep in your heart.
+
+<br><br>
+
+And I hope this year brings you closer to every single one of them.
+
+<br><br>
+
+I hope your hard work gets rewarded.
+
+I hope good opportunities find you.
+
+I hope your dreams slowly become plans.
+
+And your plans become reality.
+
+<br><br>
+
+Most of all, I hope you never lose your softness.
+
+The world often teaches people to become harder.
+
+But your gentleness is one of the most beautiful things about you.
+
+<br><br>
+
+And if one day you ever doubt yourself,
+
+please borrow my eyes for a moment.
+
+Because through my eyes,
+
+you are someone worth admiring.
+
+Someone worth loving.
+
+Someone worth celebrating.
+
+Today and every day after.
+
+</p>
+
+<button onclick="nextPage()">One Last Thing...</button>
+</section>
+
+<!-- PAGE 5 -->
+<section class="page">
+
+<div class="final">
+
+✨ Thank you for being born. ✨
+
+<br><br>
+
+Thank you for handling me gently.
+
+<br>
+
+Thank you for making me feel safe.
+
+<br>
+
+Thank you for being my favorite person.
+
+<br><br>
+
+Happy Birthday, Papa. 💙
+
+<br><br>
+
+Love,
+
+<br>
+
+Bunch of Ladies of Yours 🤍
+
+</div>
+
+</section>
+
+<script>
+
+let currentPage = 0;
+
+const pages = document.querySelectorAll('.page');
+
+function nextPage(){
+pages[currentPage].classList.remove('active');
+currentPage++;
+pages[currentPage].classList.add('active');
+}
+
+for(let i=0;i<100;i++){
+
+let star=document.createElement('div');
+
+star.classList.add('star');
+
+star.style.width=Math.random()*3+'px';
+star.style.height=star.style.width;
+
+star.style.left=Math.random()*100+'vw';
+star.style.top=Math.random()*100+'vh';
+
+star.style.animationDelay=Math.random()*5+'s';
+
+document.body.appendChild(star);
+
+}
+
+</script>
+
+</body>
+</html>
